@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +9,9 @@ public class movment : MonoBehaviour {
 
     public float runSpeed;
     public float jumpForce;
+    public float jumpAxis = Input.GetAxis("Jump");
 
-    Skill skill1;
+
 
     bool doublejump;
     bool jumping;
@@ -24,10 +25,9 @@ public class movment : MonoBehaviour {
         jumping = false;
         grounded = false;
 
-        skill1 = new Skill();
+       
 
-        skill1.level = 10;
-        skill1.name = "fire";
+
     }
 
     // Update is called once per frame
@@ -62,9 +62,6 @@ public class movment : MonoBehaviour {
             grounded = false;
         }
 
-
-        float jumpAxis = Input.GetAxis("Jump");
-
         if (jumpAxis > 0 && !jumping && grounded)
         {
 
@@ -94,41 +91,10 @@ public class movment : MonoBehaviour {
         }
 
 
-        //if (Input.GetAxis ("Fire1") > 0) {
-        if (Input.GetKeyDown("z"))
-        {
-            string output = skill1.use();
-            print(output);
-
-        }
 
 
 
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-
-        if (other.CompareTag("KillZone"))
-        {
-            Application.LoadLevel("Scene1");
-
-        }
-        else if (other.CompareTag("Coin"))
-        {
-
-
-
-        }
-    }
-
-
-
-
-
-
-
-
 
     void jumpStart()
     {
@@ -136,7 +102,8 @@ public class movment : MonoBehaviour {
         jumping = true;
         rb.AddForce(jumpMovement * jumpForce * Time.deltaTime);
     }
-
-
-
+    
+    
+    
+    
 }

@@ -9,7 +9,7 @@ public class movment : MonoBehaviour {
 
     public float runSpeed;
     public float jumpForce;
-    public float jumpAxis = Input.GetAxis("Jump");
+
 
 
 
@@ -35,6 +35,8 @@ public class movment : MonoBehaviour {
     {
 
         float horizontal = Input.GetAxis("Horizontal");
+        float jumpAxis = Input.GetAxis("Jump");
+
         Vector2 movement = new Vector2(horizontal, 0.0f);
 
         rb.AddForce(movement * runSpeed * Time.deltaTime);

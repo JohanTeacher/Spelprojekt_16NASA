@@ -39,7 +39,7 @@ public class movment : MonoBehaviour {
 
         Vector2 movement = new Vector2(horizontal, 0.0f);
 
-        rb.AddForce(movement * runSpeed * Time.deltaTime);
+        transform.position += new Vector3 (horizontal * runSpeed * Time.deltaTime ,0,0 );
 
 
 

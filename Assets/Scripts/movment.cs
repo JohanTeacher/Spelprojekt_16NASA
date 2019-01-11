@@ -7,6 +7,8 @@ public class movment : MonoBehaviour {
 
     private Rigidbody2D rb;
 
+    public GameObject gamesss;
+
     public float runSpeed;
     public float jumpForce;
 
@@ -30,12 +32,38 @@ public class movment : MonoBehaviour {
 
     }
 
+
+
+    //Detect collisions between the GameObjects with Colliders attached
+    void OnCollisionEnter(Collision collision)
+    {
+        //Check for a match with the specified name on any GameObject that collides with your GameObject
+        if (collision.gameObject.tag == "ammo")
+        {
+            //If the GameObject's name matches the one you suggest, output this message in the console
+
+            print("hello");
+           Destroy(gamesss);
+
+        }
+
+      
+    }
+
+
+
     // Update is called once per frame
     void FixedUpdate()
     {
 
         float horizontal = Input.GetAxis("Horizontal");
         float jumpAxis = Input.GetAxis("Jump");
+
+
+
+
+
+
 
         Vector2 movement = new Vector2(horizontal, 0.0f);
 

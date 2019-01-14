@@ -18,9 +18,6 @@ public class movment : MonoBehaviour {
     bool doublejump;
     bool jumping;
     bool grounded;
-    bool crouch = false;
- 
-
     // Use this for initialization
     void Start()
     {
@@ -53,21 +50,6 @@ public class movment : MonoBehaviour {
       
     }
 
-     void Update()
-    {
-        if (Input.GetButtonDown("crouch"))
-        {
-
-            crouch = true;
-
-        }
-        else if (Input.GetButtonUp("crouch"))
-        {
-
-                  crouch = false;
-                  
-        {
-           
 
 
     // Update is called once per frame

@@ -63,8 +63,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\movment.cs" />
+    <Compile Include="Assets\Scripts\test.cs" />
     <Compile Include="Assets\Scripts\TImer.cs" />
-    <Compile Include="Assets\test.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/MrJonas/Documents/GitHub/Spelprojekt_16NASA/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
 
     public GameObject bullet;   //the bullet we are shooting must have a rigidbody
     public int Speed = 32000; //the speed the bullet is shot at
+    public int health = 10;
 
   public int ammo = 10;
     public int ammo_Counter;
@@ -20,6 +21,19 @@ public class Enemy : MonoBehaviour
 
     public int y_axel;
      public int duck;
+
+    public GameObject Health10;
+    public GameObject Health9;
+    public GameObject Health8;
+    public GameObject Health7;
+    public GameObject Health6;
+    public GameObject Health5;
+    public GameObject Health4;
+    public GameObject Health3;
+    public GameObject Health2;
+    public GameObject Health1;
+
+
 
 
     //this is only used if rapid fire is set to true
@@ -44,15 +58,198 @@ public class Enemy : MonoBehaviour
 }
 
 
+   
 
 
-
-
-
-    // Update is called once per frame
-    void FixedUpdate()
+        void OnCollisionEnter(Collision collision)
     {
-        if(ammo > 1){
+
+
+        //Check for a match with the specific tag on any GameObject that collides with your GameObject
+        if (collision.gameObject.tag == "MyGameObjectTag")
+        {
+            health--;
+        }
+
+
+
+
+        // Update is called once per frame
+        void FixedUpdate()
+    {
+
+
+
+
+
+            if (health == 10)
+            {
+                Health10.SetActive(true);
+                Health9.SetActive(true);
+                Health8.SetActive(true);
+                Health7.SetActive(true);
+                Health6.SetActive(true);
+                Health5.SetActive(true);
+                Health4.SetActive(true);
+                Health3.SetActive(true);
+                Health2.SetActive(true);
+                Health1.SetActive(true);
+            }
+            else if (health == 9)
+            {
+                Health10.SetActive(false);
+                Health9.SetActive(true);
+                Health8.SetActive(true);
+                Health7.SetActive(true);
+                Health6.SetActive(true);
+
+                Health5.SetActive(true);
+                Health4.SetActive(true);
+                Health3.SetActive(true);
+                Health2.SetActive(true);
+                Health1.SetActive(true);
+
+            }
+            else if (health == 8)
+            {
+                Health10.SetActive(false);
+                Health9.SetActive(false);
+                Health8.SetActive(true);
+                Health7.SetActive(true);
+                Health6.SetActive(true);
+                Health5.SetActive(true);
+                Health4.SetActive(true);
+                Health3.SetActive(true);
+                Health2.SetActive(true);
+                Health1.SetActive(true);
+            }
+            else if (health == 7)
+            {
+
+                Health10.SetActive(false);
+                Health9.SetActive(false);
+                Health8.SetActive(false);
+                Health7.SetActive(true);
+                Health6.SetActive(true);
+                Health5.SetActive(true);
+                Health4.SetActive(true);
+                Health3.SetActive(true);
+                Health2.SetActive(true);
+                Health1.SetActive(true);
+            }
+            else if (health == 6)
+            {
+
+                Health10.SetActive(false);
+                Health9.SetActive(false);
+                Health8.SetActive(false);
+                Health7.SetActive(false);
+                Health6.SetActive(true);
+                Health5.SetActive(true);
+                Health4.SetActive(true);
+                Health3.SetActive(true);
+                Health2.SetActive(true);
+                Health1.SetActive(true);
+
+            }
+
+            if (health == 5)
+            {
+                Health10.SetActive(false);
+                Health9.SetActive(false);
+                Health8.SetActive(false);
+                Health7.SetActive(false);
+                Health6.SetActive(false);
+                Health5.SetActive(true);
+                Health4.SetActive(true);
+                Health3.SetActive(true);
+                Health2.SetActive(true);
+                Health1.SetActive(true);
+            }
+            else if (health == 4)
+            {
+                Health10.SetActive(false);
+                Health9.SetActive(false);
+                Health8.SetActive(false);
+                Health7.SetActive(false);
+                Health6.SetActive(false);
+
+                Health5.SetActive(false);
+                Health4.SetActive(true);
+                Health3.SetActive(true);
+                Health2.SetActive(true);
+                Health1.SetActive(true);
+
+            }
+            else if (health == 3)
+            {
+                Health10.SetActive(false);
+                Health9.SetActive(false);
+                Health8.SetActive(false);
+                Health7.SetActive(false);
+                Health6.SetActive(false);
+                Health5.SetActive(false);
+                Health4.SetActive(false); ;
+                Health3.SetActive(true);
+                Health2.SetActive(true);
+                Health1.SetActive(true);
+            }
+            else if (health == 2)
+            {
+
+                Health10.SetActive(false);
+                Health9.SetActive(false);
+                Health8.SetActive(false);
+                Health7.SetActive(false);
+                Health6.SetActive(false);
+                Health5.SetActive(false);
+                Health4.SetActive(false);
+                Health3.SetActive(false);
+                Health2.SetActive(true);
+                Health1.SetActive(true);
+            }
+            else if (health == 1)
+            {
+
+                Health10.SetActive(false);
+                Health9.SetActive(false);
+                Health8.SetActive(false);
+                Health7.SetActive(false);
+                Health6.SetActive(false);
+                Health5.SetActive(false);
+                Health4.SetActive(false);
+                Health3.SetActive(false);
+                Health2.SetActive(false);
+                Health1.SetActive(false);
+
+            }
+            else if (health == 0)
+            {
+                        
+                Destroy(gameObject);
+
+
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        if (ammo > 1){
 
 
             if (ammo_Counter == duck){

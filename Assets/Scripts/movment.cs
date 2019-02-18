@@ -6,6 +6,7 @@ public class movment : MonoBehaviour {
 
 
     private Rigidbody2D rb;
+    private Animator animator;
 
     public GameObject gamesss;
 
@@ -23,6 +24,7 @@ public class movment : MonoBehaviour {
     {
 
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         jumping = false;
         grounded = false;
@@ -68,6 +70,24 @@ public class movment : MonoBehaviour {
         Vector2 movement = new Vector2(horizontal, 0.0f);
 
         transform.position += new Vector3 (horizontal * runSpeed * Time.deltaTime ,0,0 );
+
+        if(movement.x > -0.1f && movement.x < 0.1f)
+        {
+            animator.SetBool("walking", false);
+        }
+        else
+        {
+            animator.SetBool("walking", true);
+        }
+
+        if (movement.x < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
 
 
 

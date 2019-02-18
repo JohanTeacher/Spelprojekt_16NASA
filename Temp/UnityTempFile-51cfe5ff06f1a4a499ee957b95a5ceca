@@ -77,9 +77,9 @@
 -r:"/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
 -r:"/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
 -r:"/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
--r:"/Users/MrJonas/Documents/GitHub/Spelprojekt_16NASA/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll"
--r:"/Users/MrJonas/Documents/GitHub/Spelprojekt_16NASA/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll"
--r:"/Users/MrJonas/Documents/GitHub/Spelprojekt_16NASA/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll"
+-r:"/Users/epiczed00/Spelprojekt_16NASA/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll"
+-r:"/Users/epiczed00/Spelprojekt_16NASA/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll"
+-r:"/Users/epiczed00/Spelprojekt_16NASA/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll"
 -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll"
 -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.dll"
 -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Core.dll"
@@ -100,7 +100,7 @@
 -define:UNITY_2018_1_OR_NEWER
 -define:UNITY_2018_2_OR_NEWER
 -define:UNITY_2018_3_OR_NEWER
--define:UNITY_2018_3_4
+-define:UNITY_2018_3_5
 -define:UNITY_2018_3
 -define:UNITY_2018
 -define:PLATFORM_ARCH_64

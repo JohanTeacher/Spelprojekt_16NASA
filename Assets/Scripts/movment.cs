@@ -12,6 +12,9 @@ public class movment : MonoBehaviour {
     public float runSpeed;
     public float jumpForce;
 
+    Animator animator;
+    SpriteRenderer spriteRenderer;
+
 
 
 
@@ -23,6 +26,8 @@ public class movment : MonoBehaviour {
     {
 
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>(); 
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         jumping = false;
         grounded = false;
@@ -68,6 +73,35 @@ public class movment : MonoBehaviour {
         Vector2 movement = new Vector2(horizontal, 0.0f);
 
         transform.position += new Vector3 (horizontal * runSpeed * Time.deltaTime ,0,0 );
+
+        if (movement.x > 0.1f)
+        {
+            //går höger
+
+            //vänd år höger
+            spriteRenderer.flipX = false;
+
+            //starta animationen
+            animator.SetBool("walking", true);
+
+        }
+        else if (movement.x < -0.1f)
+        {
+            //går vänster
+
+            //vönd
+            spriteRenderer.flipX = true;
+
+            //animation
+            animator.SetBool("walking", true);
+
+        }
+        else 
+        {
+            //stannar
+            //stäng av animation
+            animator.SetBool("walking", false);
+        }
 
 
 

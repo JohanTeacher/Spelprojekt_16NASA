@@ -63,7 +63,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\high_score.cs" />
-    <Compile Include="Assets\Scripts\movment.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\test.cs" />
     <Compile Include="Assets\Scripts\TImer.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

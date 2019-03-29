@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movment : MonoBehaviour {
+public class Movement : MonoBehaviour {
 
 
     private Rigidbody2D rb;
@@ -13,7 +13,7 @@ public class movment : MonoBehaviour {
     public float jumpForce;
 
     Animator animator;
-    SpriteRenderer spriteRenderer;
+    SpriteRenderer spriteRenderr;
 
 
 

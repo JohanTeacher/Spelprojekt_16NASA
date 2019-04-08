@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour {
     public float jumpForce;
 
     Animator animator;
-    SpriteRenderer spriteRenderr;
+    SpriteRenderer spriteRenderer;
 
 
 

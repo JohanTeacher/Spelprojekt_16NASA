@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5570557664715843157}
   - component: {fileID: 5570557664715843158}
-  - component: {fileID: 5570557664715843156}
+  - component: {fileID: 7524619262564785658}
   - component: {fileID: 5570557664715843162}
   - component: {fileID: 5570557664715843163}
   - component: {fileID: 5570557664715843161}
   m_Layer: 0
-  m_Name: "huvudkarakta\u0308r (1)"
+  m_Name: "huvudkarakt\xE4r"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5570557664715843156
+--- !u!114 &7524619262564785658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,12 +94,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5570557664715843159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46dd2710dbaca4b20b4b3a01c1234dd3, type: 3}
+  m_Script: {fileID: 11500000, guid: b28579733cb424bb3aa4f7591dbe56e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gamesss: {fileID: 0}
-  runSpeed: 5
-  jumpForce: 90
+  runSpeed: 3
+  jumpForce: 100
 --- !u!50 &5570557664715843162
 Rigidbody2D:
   serializedVersion: 4
@@ -157,7 +157,7 @@ Animator:
   m_GameObject: {fileID: 5570557664715843159}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2616ccbe7c041430185334713dfec1d3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1429c0a7c03764b9ab5a41bd620fe22e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

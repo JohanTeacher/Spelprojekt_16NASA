@@ -42,12 +42,12 @@ public class Enemy : MonoBehaviour
     //this is only used if rapid fire is set to true
     //RateOfFire privat
 
-    Rigidbody2D enemyRigB;
+    Rigidbody enemyRigB;
 
     // Use this for initialization
     void Start()
     {
-        enemyRigB = GetComponent<Rigidbody2D>();
+        enemyRigB = GetComponent<Rigidbody>();
 
         //GameObject shotRapid = Instantiate(bullet, transform.position - new Vector3(2, 0, 0), Quaternion.identity);
 

@@ -40,7 +40,7 @@ public class Mini_Enemy : MonoBehaviour
     }
 
 
-
+    //askjbfu1qbwvzy¸jctwyshvuywscztq2wcstg
 
 
    // void OnCollisionEnter(Collision collision)

@@ -14,6 +14,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+<<<<<<< HEAD
     m_Controller: {fileID: 0}
   - m_Name: PlayerThrow
     m_Type: 9
@@ -21,6 +22,9 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+=======
+    m_Controller: {fileID: 9100000}
+>>>>>>> c3c885a9d1d7c3783e476977c7d4f0790c862900
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -152,7 +156,11 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
+<<<<<<< HEAD
   m_Motion: {fileID: 7400000, guid: b2b0f29e5a127432490eed5a03dced37, type: 2}
+=======
+  m_Motion: {fileID: 7400000, guid: 12b56525e5bc8416184c77295e7d74c2, type: 2}
+>>>>>>> c3c885a9d1d7c3783e476977c7d4f0790c862900
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

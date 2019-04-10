@@ -32,6 +32,9 @@ public class Mini_Enemy : MonoBehaviour
     void Update()
     {
 
+        GameObject shotRapid = Instantiate(bullet, transform.position - new Vector3(0, 1, 0), Quaternion.identity);
+
+        shotRapid.GetComponent<Rigidbody2D>().AddForce(new Vector2(-Speed, 0));
 
 
     }
@@ -40,20 +43,20 @@ public class Mini_Enemy : MonoBehaviour
 
 
 
-    void OnCollisionEnter(Collision collision)
-    {
+   // void OnCollisionEnter(Collision collision)
+    //{
         //Check for a match with the specified name on any GameObject that collides with your GameObject
-        if (collision.gameObject.tag == "Player")
-        {
+        //if (collision.gameObject.tag == "Player")
+        //{
             //If the GameObject's name matches the one you suggest, output this message in the console
 
-            GameObject shotRapid = Instantiate(bullet, transform.position - new Vector3(0, 0, 0), Quaternion.identity);
+      //      GameObject shotRapid = Instantiate(bullet, transform.position - new Vector3(0, 1, 0), Quaternion.identity);
 
-            shotRapid.GetComponent<Rigidbody2D>().AddForce(new Vector2(-Speed, 0));
-
-
-        }
+        //    shotRapid.GetComponent<Rigidbody2D>().AddForce(new Vector2(-Speed, 0));
 
 
-    }
+        //}
+
+
+    //}
 }
